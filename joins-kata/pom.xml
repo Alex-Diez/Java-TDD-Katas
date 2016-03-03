@@ -15,6 +15,7 @@
         <module>joins-kata-day-1</module>
         <module>joins-kata-day-2</module>
         <module>joins-kata-day-3</module>
+        <module>joins-kata-day-4</module>
     </modules>
 
 </project>
