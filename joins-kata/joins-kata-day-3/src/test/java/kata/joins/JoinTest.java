@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -29,33 +30,33 @@ public class JoinTest {
     }
 
     public class InnerJoin {
-        List<Triple<Integer, Integer, Integer>> result = List.of(
+        List<Triple<Integer, Integer, Integer>> result = Arrays.asList(
                 new ImmutableTriple<>(1, 1, 1),
                 new ImmutableTriple<>(2, 2, 2),
                 new ImmutableTriple<>(3, 3, 3),
                 new ImmutableTriple<>(4, 4, 4)
         );
 
-        List<Pair<Integer, Integer>> view = List.of(
+        List<Pair<Integer, Integer>> view = Arrays.asList(
                 new ImmutablePair<>(1, 1),
                 new ImmutablePair<>(2, 2),
                 new ImmutablePair<>(3, 3),
                 new ImmutablePair<>(4, 4)
         );
 
-        List<Triple<Integer, Integer, Integer>> leftRight = List.of(
+        List<Triple<Integer, Integer, Integer>> leftRight = Arrays.asList(
                 new ImmutableTriple<>(1, 1, 1),
                 new ImmutableTriple<>(2, 2, 2),
                 new ImmutableTriple<>(4, 4, 4)
         );
 
-        List<Pair<Integer, Integer>> left = List.of(
+        List<Pair<Integer, Integer>> left = Arrays.asList(
                 new ImmutablePair<>(1, 1),
                 new ImmutablePair<>(2, 2),
                 new ImmutablePair<>(4, 4)
         );
 
-        List<Pair<Integer, Integer>> right = List.of(
+        List<Pair<Integer, Integer>> right = Arrays.asList(
                 new ImmutablePair<>(1, 1),
                 new ImmutablePair<>(2, 2),
                 new ImmutablePair<>(4, 4),
@@ -97,21 +98,21 @@ public class JoinTest {
 
         @Test
         public void itShouldJoinLeftViewWithRightByNestedLoop() throws Exception {
-            List<Triple<Integer, Integer, Integer>> result = List.of(
+            List<Triple<Integer, Integer, Integer>> result = Arrays.asList(
                     new ImmutableTriple<>(1, 1, 1),
                     new ImmutableTriple<>(2, 2, null),
                     new ImmutableTriple<>(3, 3, 3),
                     new ImmutableTriple<>(4, 4, null)
             );
 
-            List<Pair<Integer, Integer>> left = List.of(
+            List<Pair<Integer, Integer>> left = Arrays.asList(
                     new ImmutablePair<>(1, 1),
                     new ImmutablePair<>(2, 2),
                     new ImmutablePair<>(3, 3),
                     new ImmutablePair<>(4, 4)
             );
 
-            List<Pair<Integer, Integer>> right = List.of(
+            List<Pair<Integer, Integer>> right = Arrays.asList(
                     new ImmutablePair<>(1, 1),
                     new ImmutablePair<>(3, 3)
             );
@@ -121,21 +122,21 @@ public class JoinTest {
 
         @Test
         public void itShouldJoinLeftViewWithRightByHashJoin() throws Exception {
-            List<Triple<Integer, Integer, Integer>> result = List.of(
+            List<Triple<Integer, Integer, Integer>> result = Arrays.asList(
                     new ImmutableTriple<>(1, 1, 1),
                     new ImmutableTriple<>(2, 2, null),
                     new ImmutableTriple<>(3, 3, 3),
                     new ImmutableTriple<>(4, 4, null)
             );
 
-            List<Pair<Integer, Integer>> left = List.of(
+            List<Pair<Integer, Integer>> left = Arrays.asList(
                     new ImmutablePair<>(1, 1),
                     new ImmutablePair<>(2, 2),
                     new ImmutablePair<>(3, 3),
                     new ImmutablePair<>(4, 4)
             );
 
-            List<Pair<Integer, Integer>> right = List.of(
+            List<Pair<Integer, Integer>> right = Arrays.asList(
                     new ImmutablePair<>(1, 1),
                     new ImmutablePair<>(3, 3)
             );

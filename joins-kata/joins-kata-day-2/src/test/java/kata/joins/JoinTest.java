@@ -32,7 +32,7 @@ public class JoinTest {
     public class InnerJoin {
 
         @SuppressWarnings("ALL")
-        List<Triple<Integer, Integer, Integer>> sameSetJoint = List.of(
+        List<Triple<Integer, Integer, Integer>> sameSetJoint = Arrays.asList(
                 new ImmutableTriple[]{
                         new ImmutableTriple(1, 1, 1),
                         new ImmutableTriple(2, 2, 2),
@@ -42,7 +42,7 @@ public class JoinTest {
         );
 
         @SuppressWarnings("ALL")
-        List<Pair<Integer, Integer>> set = List.of(
+        List<Pair<Integer, Integer>> set = Arrays.asList(
                 new ImmutablePair[]{
                         new ImmutablePair(1, 1),
                         new ImmutablePair(2, 2),
@@ -52,7 +52,7 @@ public class JoinTest {
         );
 
         @SuppressWarnings("ALL")
-        List<Triple<Integer, Integer, Integer>> intersect = List.of(
+        List<Triple<Integer, Integer, Integer>> intersect = Arrays.asList(
                 new ImmutableTriple[]{
                         new ImmutableTriple(1, 1, 1),
                         new ImmutableTriple(2, 2, 2)
@@ -60,7 +60,7 @@ public class JoinTest {
         );
 
         @SuppressWarnings("ALL")
-        List<Pair<Integer, Integer>> left = List.of(
+        List<Pair<Integer, Integer>> left = Arrays.asList(
                 new ImmutablePair[]{
                         new ImmutablePair(1, 1),
                         new ImmutablePair(2, 2),
@@ -71,7 +71,7 @@ public class JoinTest {
         );
 
         @SuppressWarnings("ALL")
-        List<Pair<Integer, Integer>> right = List.of(
+        List<Pair<Integer, Integer>> right = Arrays.asList(
                 new ImmutablePair[]{
                         new ImmutablePair(1, 1),
                         new ImmutablePair(2, 2),

@@ -12,10 +12,10 @@
     <artifactId>sudoku-kata</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>day-1</module>
-        <module>day-2</module>
-        <module>day-3</module>
-        <module>day-4</module>
+        <module>sudoku-kata-day-1</module>
+        <module>sudoku-kata-day-2</module>
+        <module>sudoku-kata-day-3</module>
+        <module>sudoku-kata-day-4</module>
     </modules>
 
 </project>
