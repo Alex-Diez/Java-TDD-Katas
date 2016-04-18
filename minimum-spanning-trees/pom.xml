@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>minimum-spanning-trees-kata-day-1</module>
+        <module>minimum-spanning-trees-kata-day-2</module>
     </modules>
 
 
