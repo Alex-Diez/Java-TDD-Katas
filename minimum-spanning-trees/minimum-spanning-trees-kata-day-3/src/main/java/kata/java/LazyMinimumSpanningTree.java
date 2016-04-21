@@ -8,12 +8,12 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class LazyMinimumSpinningTree {
+public class LazyMinimumSpanningTree {
     private final Set<Integer> marked = new HashSet<>();
     private final Queue<WeightedEdge> priority = new PriorityQueue<>();
     private final Queue<WeightedEdge> tree = new ArrayDeque<>();
 
-    public LazyMinimumSpinningTree(WeightedEdgeGraph graph) {
+    public LazyMinimumSpanningTree(WeightedEdgeGraph graph) {
         if (graph.numberOfVertices() < 1) {
             throw new RuntimeException();
         }

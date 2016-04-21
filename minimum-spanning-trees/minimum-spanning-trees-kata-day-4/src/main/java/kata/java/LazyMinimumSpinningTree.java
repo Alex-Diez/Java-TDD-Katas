@@ -1,7 +1,6 @@
 package kata.java;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.PriorityQueue;
