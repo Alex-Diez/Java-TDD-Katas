@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day-2</artifactId>
+    <artifactId>sudoku-kata-day-2</artifactId>
 
     <dependencies>
         <dependency>

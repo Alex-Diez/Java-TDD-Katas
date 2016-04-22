@@ -11,6 +11,7 @@
 
     <artifactId>sudoku-kata</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>sudoku-kata-day-1</module>
         <module>sudoku-kata-day-2</module>
