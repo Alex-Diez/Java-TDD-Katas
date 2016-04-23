@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class LazyMinimumSpanningTreeTest {
+public class MinimumSpanningTreeTest {
 
     private EdgeWeightedGraph graph;
 
