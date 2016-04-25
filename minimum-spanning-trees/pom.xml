@@ -20,6 +20,7 @@
         <module>minimum-spanning-trees-kata-day-6</module>
         <module>minimum-spanning-trees-kata-day-7</module>
         <module>minimum-spanning-trees-kata-day-8</module>
+        <module>minimum-spanning-trees-kata-day-9</module>
     </modules>
 
 </project>
