@@ -12,6 +12,7 @@
         <module>sudoku-kata</module>
         <module>joins-kata</module>
         <module>minimum-spanning-trees</module>
+        <module>shortest-paths-kata</module>
     </modules>
 
     <build>
