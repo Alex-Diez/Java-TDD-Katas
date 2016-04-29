@@ -1,6 +1,7 @@
 package kata.java;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,21 +9,20 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-public class ShortestPath {
-    private final Map<Integer, DirectedEdge> paths;
+public class ShortestPaths {private final Map<Integer, DirectedEdge> paths;
 
-    private ShortestPath(Map<Integer, DirectedEdge> paths) {
+    private ShortestPaths(Map<Integer, DirectedEdge> paths) {
         this.paths = paths;
     }
 
-    public static ShortestPath create(EdgeWeightedDigraph digraph, int sourceVertex) {
+    public static ShortestPaths create(EdgeWeightedDigraph digraph, int sourceVertex) {
         if (digraph.numberOfVertex() < 1) {
             throw new RuntimeException();
         }
-        if (!digraph.containsVertex(sourceVertex)) {
+        if (!digraph.contains(sourceVertex)) {
             throw new RuntimeException();
         }
-        return new ShortestPath(new AcyclicShortestPathBuilder(digraph, sourceVertex).buildPath());
+        return new ShortestPaths(new AcyclicShortestPathBuilder(digraph, sourceVertex).buildPath());
     }
 
     public Iterable<DirectedEdge> pathTo(int vertex) {
@@ -60,7 +60,11 @@ public class ShortestPath {
         }
 
         private void relax(DirectedEdge edge) {
-            if (distances.get(edge.to) > distances.get(edge.from) + edge.weight) {
+            if (Double.isInfinite(distances.get(edge.to))) {
+                distances.compute(edge.from, (k, distance) -> edge.weight);
+                edges.put(edge.to, edge);
+            }
+            else if (distances.get(edge.to) > distances.get(edge.from) + edge.weight) {
                 distances.compute(edge.from, (k, distance) -> distance + edge.weight);
                 edges.put(edge.to, edge);
             }
@@ -149,4 +153,3 @@ public class ShortestPath {
         }
     }
 }
-

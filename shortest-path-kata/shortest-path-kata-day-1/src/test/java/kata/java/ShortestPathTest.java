@@ -36,6 +36,7 @@ public class ShortestPathTest {
     }
 
     @Test
+    @Ignore
     public void itShouldHaveTwoEdgeInPath() throws Exception {
         digraph.addEdge(DirectedWeightedEdge.create(1, 2, 1.0));
         digraph.addEdge(DirectedWeightedEdge.create(2, 3, 1.0));
