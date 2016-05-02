@@ -17,6 +17,7 @@
         <module>shortest-path-kata-day-3</module>
         <module>shortest-path-kata-day-4</module>
         <module>shortest-path-kata-day-5</module>
+        <module>shortest-path-kata-day-6</module>
     </modules>
 
 </project>
