@@ -20,6 +20,7 @@
         <module>shortest-path-kata-day-6</module>
         <module>shortest-path-kata-day-7</module>
         <module>shortest-path-kata-day-8</module>
+        <module>shortest-path-kata-day-9</module>
     </modules>
 
 </project>
