@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>tries-symbol-table-kata-day-1</module>
+        <module>tries-symbol-table-kata-day-2</module>
     </modules>
 
 </project>
