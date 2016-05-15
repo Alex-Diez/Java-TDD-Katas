@@ -19,6 +19,7 @@
         <module>tries-symbol-table-kata-day-5</module>
         <module>tries-symbol-table-kata-day-6</module>
         <module>tries-symbol-table-kata-day-7</module>
+        <module>tries-symbol-table-kata-day-8</module>
     </modules>
 
 </project>
