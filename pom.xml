@@ -14,6 +14,7 @@
         <module>minimum-spanning-trees</module>
         <module>shortest-path-kata</module>
         <module>tries-symbol-table-kata</module>
+        <module>btree-kata</module>
     </modules>
 
     <build>
