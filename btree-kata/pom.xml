@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>btree-kata-day-1</module>
+        <module>btree-kata-day-2</module>
     </modules>
 
 </project>
