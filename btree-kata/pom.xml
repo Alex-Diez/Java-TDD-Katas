@@ -21,6 +21,7 @@
         <module>btree-kata-day-7</module>
         <module>btree-kata-day-8</module>
         <module>btree-kata-day-9</module>
+        <module>btree-kata-day-10</module>
     </modules>
 
 </project>
