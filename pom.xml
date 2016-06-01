@@ -15,6 +15,7 @@
         <module>shortest-path-kata</module>
         <module>tries-symbol-table-kata</module>
         <module>btree-kata</module>
+        <module>bowling-kata</module>
     </modules>
 
     <build>
