@@ -28,7 +28,7 @@ public class ShortestPathsTest {
         ShortestPaths.create(digraph, 1);
     }
 
-    @Test
+    @Test@Ignore
     public void itShouldHaveTwoEdgeInPath() throws Exception {
         digraph.addEdge(DirectedEdge.create(1, 2, 1.0));
         digraph.addEdge(DirectedEdge.create(2, 3, 1.0));
@@ -39,7 +39,7 @@ public class ShortestPathsTest {
         assertThat(paths.pathTo(3), contains(DirectedEdge.create(1, 2, 1.0), DirectedEdge.create(2, 3, 1.0)));
     }
 
-    @Test
+    @Test@Ignore
     public void itShouldHaveThreeEdgeInPath() throws Exception {
         digraph.addEdge(DirectedEdge.create(1, 2, 1.0));
         digraph.addEdge(DirectedEdge.create(2, 3, 1.0));

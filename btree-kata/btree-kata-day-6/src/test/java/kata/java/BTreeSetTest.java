@@ -1,6 +1,7 @@
 package kata.java;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -16,7 +17,7 @@ public class BTreeSetTest {
         set = new BTreeSet(PAGE_LENGTH);
     }
 
-    @Test
+    @Test@Ignore
     public void doesNotContain_whenValueWasNotPutIn() throws Exception {
         assertThat(set.contains(1), is(false));
     }
@@ -41,7 +42,7 @@ public class BTreeSetTest {
         assertThat(set.contains(4), is(true));
     }
 
-    @Test
+    @Test@Ignore
     public void containKeysAfterPageSplitting() throws Exception {
         insertKeyRange(0, PAGE_LENGTH);
 
@@ -60,7 +61,7 @@ public class BTreeSetTest {
         }
     }
 
-    @Test
+    @Test@Ignore
     public void containKeysAfterSubPageSplit() throws Exception {
         insertKeyRange(0, PAGE_LENGTH / 2);
         insertKeyRange(PAGE_LENGTH, PAGE_LENGTH + PAGE_LENGTH / 2);
@@ -71,7 +72,7 @@ public class BTreeSetTest {
         assertKeyRange(PAGE_LENGTH, PAGE_LENGTH + PAGE_LENGTH / 2);
     }
 
-    @Test
+    @Test@Ignore
     public void moreThenTwoLevelGrow() throws Exception {
         insertKeyRange(0, PAGE_LENGTH * PAGE_LENGTH);
 
