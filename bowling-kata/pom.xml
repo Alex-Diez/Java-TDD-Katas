@@ -21,6 +21,7 @@
         <module>bowling-kata-day-7</module>
         <module>bowling-kata-day-8</module>
         <module>bowling-kata-day-9</module>
+        <module>bowling-kata-day-10</module>
     </modules>
 
 </project>
