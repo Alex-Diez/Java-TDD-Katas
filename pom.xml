@@ -16,6 +16,7 @@
         <module>tries-symbol-table-kata</module>
         <module>btree-kata</module>
         <module>bowling-kata</module>
+        <module>string-calculator-kata</module>
     </modules>
 
     <build>
