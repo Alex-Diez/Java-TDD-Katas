@@ -14,6 +14,7 @@
     <modules>
         <module>string-calculator-kata-day-1</module>
         <module>string-calculator-kata-day-2</module>
+        <module>string-calculator-kata-day-3</module>
     </modules>
 
 </project>
