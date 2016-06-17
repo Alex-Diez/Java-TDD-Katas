@@ -20,11 +20,11 @@ public class Calculator {
         while (chars.hasNext()) {
             char sign = chars.current();
             if (sign == '+') {
-                chars.iterate();
+                chars.next();
                 term += parseTerm(chars);
             }
             else if (sign == '-') {
-                chars.iterate();
+                chars.next();
                 term -= parseTerm(chars);
             }
             else {
@@ -39,11 +39,11 @@ public class Calculator {
         while (chars.hasNext()) {
             char sign = chars.current();
             if (sign == '*') {
-                chars.iterate();
+                chars.next();
                 arg *= parseArg(chars);
             }
             else if (sign == '/') {
-                chars.iterate();
+                chars.next();
                 arg /= parseArg(chars);
             }
             else {
@@ -56,7 +56,7 @@ public class Calculator {
     private static double parseArg(Chars chars) {
         int index = chars.index();
         while (chars.hasNext() && !OPERATIONS.contains(chars.current())) {
-            chars.iterate();
+            chars.next();
         }
         return Double.parseDouble(chars.substring(index, chars.index()));
     }
@@ -77,7 +77,7 @@ public class Calculator {
             return source.charAt(index);
         }
 
-        void iterate() {
+        void next() {
             index += 1;
         }
 
