@@ -35,7 +35,7 @@ public class Calculator {
 
             double val = 0.0;
             for (Term term : terms) {
-                val = term.operation().apply(val, term.join());
+                val = term.operation.apply(val, term.join());
             }
             return val;
         }
@@ -79,14 +79,14 @@ public class Calculator {
         private final String source;
         private final int from;
         private final int to;
-        private final Calculator.Operation op;
+        private final Operation operation;
         private int index;
 
-        Term(String source, int from, int to, Operation op) {
+        Term(String source, int from, int to, Operation operation) {
             this.source = source;
             this.from = from;
             this.to = to;
-            this.op = op;
+            this.operation = operation;
             this.index = from;
         }
 
@@ -116,13 +116,9 @@ public class Calculator {
             return Double.parseDouble(source.substring(start, index));
         }
 
-        Operation operation() {
-            return op;
-        }
-
         @Override
         public String toString() {
-            return "[ Term of " + source.substring(from, to) + " operation " + op + " ]";
+            return "[ Term of " + source.substring(from, to) + " operation " + operation + " ]";
         }
     }
 
