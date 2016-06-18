@@ -16,10 +16,6 @@ public class Calculator {
 
     private static class Expression
             extends RecursiveTask<Double> {
-        private static final Set<Character> OPERATIONS = new HashSet<Character>() {{
-            add('+');
-            add('-');
-        }};
 
         private final String source;
 
@@ -67,7 +63,7 @@ public class Calculator {
 
         private int findEnd(int start) {
             int index = start;
-            while (index < source.length() && !OPERATIONS.contains(source.charAt(index))) {
+            while (index < source.length() && !(source.charAt(index) == '+' || source.charAt(index) == '-')) {
                 index += 1;
             }
             return index;
