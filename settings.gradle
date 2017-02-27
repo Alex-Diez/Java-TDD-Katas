@@ -80,3 +80,4 @@ include ':string-calculator-kata:string-calculator-kata-day-9'
 include ':string-calculator-kata:string-calculator-kata-day-10'
 
 include ':resizable-deque-kata:resizable-deque-day-1'
+include ':resizable-deque-kata:resizable-deque-day-2'
