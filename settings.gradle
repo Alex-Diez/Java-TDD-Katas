@@ -89,3 +89,5 @@ include ':resizable-deque-kata:resizable-deque-day-7'
 include ':resizable-deque-kata:resizable-deque-day-8'
 include ':resizable-deque-kata:resizable-deque-day-9'
 include ':resizable-deque-kata:resizable-deque-day-10'
+
+include ':linear-probe-map-kata:probe-map-day-1'
