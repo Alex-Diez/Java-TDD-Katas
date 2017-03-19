@@ -102,3 +102,4 @@ include ':linear-probe-map-kata:probe-map-day-9'
 include ':linear-probe-map-kata:probe-map-day-10'
 
 include ':linked-deque-kata:linked-deque-day-1'
+include ':linked-deque-kata:linked-deque-day-2'
