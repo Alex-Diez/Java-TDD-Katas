@@ -113,3 +113,4 @@ include ':linked-deque-kata:linked-deque-day-9'
 include ':linked-deque-kata:linked-deque-day-10'
 
 include ':persistent-list-kata:persistent-list-day-1'
+include ':persistent-list-kata:persistent-list-day-2'
