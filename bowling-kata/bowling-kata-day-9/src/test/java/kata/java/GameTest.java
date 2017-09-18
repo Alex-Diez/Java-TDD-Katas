@@ -1,8 +1,7 @@
 package kata.java;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -26,27 +25,27 @@ public class GameTest {
 
     private Game game;
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeEach
+    void setUp() throws Exception {
         game = new Game();
     }
 
     @Test
-    public void gutterGame() throws Exception {
+    void gutterGame() throws Exception {
         rollMany(20, 0);
 
         assertThat(game.score(), is(0));
     }
 
     @Test
-    public void allOnes() throws Exception {
+    void allOnes() throws Exception {
         rollMany(20, 1);
 
         assertThat(game.score(), is(20));
     }
 
     @Test
-    public void oneSpare() throws Exception {
+    void oneSpare() throws Exception {
         rollSpare();
         game.roll(3);
         rollMany(17, 0);
@@ -55,7 +54,7 @@ public class GameTest {
     }
 
     @Test
-    public void oneStrike() throws Exception {
+    void oneStrike() throws Exception {
         rollStrike();
         game.roll(4);
         game.roll(3);

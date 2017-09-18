@@ -1,12 +1,8 @@
 package kata.java;
 
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import io.reactivex.Flowable;
 import io.reactivex.Observable;
 
 public class RxFizzBuzz {
