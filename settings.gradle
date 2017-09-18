@@ -127,3 +127,5 @@ include ':linked-array-deque-kata:linked-array-deque-day-1'
 include ':linked-array-deque-kata:linked-array-deque-day-2'
 include ':linked-array-deque-kata:linked-array-deque-day-3'
 include ':linked-array-deque-kata:linked-array-deque-day-4'
+
+include ':rx-fizz-buzz-kata:rx-fizz-buzz-day-1'
