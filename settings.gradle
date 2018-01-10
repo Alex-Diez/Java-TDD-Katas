@@ -16,3 +16,4 @@ include ':bowling-game-kata:bowling-game-day-13'
 include ':bowling-game-kata:bowling-game-day-14'
 
 include ':path-sum-kata:path-sum-day-1'
+include ':path-sum-kata:path-sum-day-2'
