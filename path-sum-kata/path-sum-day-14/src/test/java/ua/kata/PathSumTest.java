@@ -1,5 +1,6 @@
 package ua.kata;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import io.vavr.collection.List;
