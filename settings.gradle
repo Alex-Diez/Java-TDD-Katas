@@ -29,3 +29,5 @@ include ':path-sum-kata:path-sum-day-11'
 include ':path-sum-kata:path-sum-day-12'
 include ':path-sum-kata:path-sum-day-13'
 include ':path-sum-kata:path-sum-day-14'
+
+include ':nested-joins-kata:nested-joins-day-1'
