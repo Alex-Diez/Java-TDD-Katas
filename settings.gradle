@@ -46,3 +46,4 @@ include ':nested-joins-kata:nested-joins-day-13'
 include ':nested-joins-kata:nested-joins-day-14'
 
 include ':string-calc-kata:string-calc-day-1'
+include ':string-calc-kata:string-calc-day-2'
