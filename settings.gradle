@@ -61,3 +61,4 @@ include ':string-calc-kata:string-calc-day-13'
 include ':string-calc-kata:string-calc-day-14'
 
 include ':persistent-queue-kata:persistent-queue-day-1'
+include ':persistent-queue-kata:persistent-queue-day-2'
