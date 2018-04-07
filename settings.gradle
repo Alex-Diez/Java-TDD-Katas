@@ -66,3 +66,4 @@ include ':persistent-queue-kata:persistent-queue-day-3'
 
 include ':k-max-items-kata:k-max-items-day01'
 include ':k-max-items-kata:k-max-items-day02'
+include ':k-max-items-kata:k-max-items-day03'
