@@ -93,3 +93,5 @@ include ':rotate-matrix-kata:rotate-matrix-day11'
 include ':rotate-matrix-kata:rotate-matrix-day12'
 include ':rotate-matrix-kata:rotate-matrix-day13'
 include ':rotate-matrix-kata:rotate-matrix-day14'
+
+include ':shift-array-left-kata:shift-array-left-day01'
