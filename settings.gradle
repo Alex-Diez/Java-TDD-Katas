@@ -17,6 +17,7 @@ include ':bowling-game-kata:iteration-1:bowling-game-day-14'
 
 include ':bowling-game-kata:iteration-2:bowling-game-day-1'
 include ':bowling-game-kata:iteration-2:bowling-game-day-2'
+include ':bowling-game-kata:iteration-2:bowling-game-day-3'
 
 include ':path-sum-kata:path-sum-day-1'
 include ':path-sum-kata:path-sum-day-2'
