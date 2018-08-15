@@ -117,3 +117,5 @@ include ':shift-array-left-kata:shift-array-left-day05'
 include ':shift-array-left-kata:shift-array-left-day06'
 include ':shift-array-left-kata:shift-array-left-day07'
 include ':shift-array-left-kata:shift-array-left-day08'
+
+include ':leap-year-kata:leap-year-day01'
