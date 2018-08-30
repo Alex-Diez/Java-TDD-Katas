@@ -132,3 +132,5 @@ include ':leap-year-kata:leap-year-day11'
 include ':leap-year-kata:leap-year-day12'
 include ':leap-year-kata:leap-year-day13'
 include ':leap-year-kata:leap-year-day14'
+
+include ':tree-walk-level-by-level:tree-walk-day01'
