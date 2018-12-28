@@ -139,3 +139,5 @@ include ':tree-walk-level-by-level:tree-walk-day03'
 include ':tree-walk-level-by-level:tree-walk-day04'
 include ':tree-walk-level-by-level:tree-walk-day05'
 include ':tree-walk-level-by-level:tree-walk-day06'
+
+include ':min-triangle-sum:triangle-sum-day01'
