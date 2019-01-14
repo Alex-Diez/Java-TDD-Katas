@@ -156,3 +156,4 @@ include ':min-triangle-sum:triangle-sum-day13'
 include ':min-triangle-sum:triangle-sum-day14'
 
 include ':tree-serialization-deserialization:pre-order-day01'
+include ':tree-serialization-deserialization:pre-order-day02'
